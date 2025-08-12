@@ -237,3 +237,38 @@ hr{
     font-size: 14px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .search {
+        display: none;
+    }
+    .search-button {
+        display: none;
+    }
+    .mic {
+        display: none;
+    }
+    .videos-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .videos-container {
+        grid-template-columns: 1fr;
+    }
+    .recommend {
+        gap: 5px;
+    }
+    .recommend span,
+    .recommend span1 {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
